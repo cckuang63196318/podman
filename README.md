@@ -74,6 +74,10 @@ podman run，執行容器
 
 ## 指令
 ```
+完成初始化與啟動:
+podman machine init(只要安裝後執行一次即可)
+podman machine start
+
 指令清單:
 podman --help
 
