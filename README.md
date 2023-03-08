@@ -94,7 +94,7 @@ podman build -f Dockerfile.dmz -t todolistuiimg-dev:v1.00 . --no-cache
 (remove c:/Users/<your account>/.docker/config.json)
 
 啟動容器:
-podman run -d --name my-nginx nginx
+podman run -d -p 1443:1443 --name my-nginx nginx
 -d : 背景執行
 –name : 自訂易容器名稱
 -p : 定義輸出的 port ( <host port>:<expose port>)
@@ -105,6 +105,13 @@ podman ps
 podman stop ContainerID
 podman rm ContainerID
 (podman container rm ContainerName)
+
+執行 container 內的指令:
+podman exec -it rocky1 sh
+那加上 -it 之後，你就會在 container 內停留操作 bash
+
+監看容器Log
+podman logs ContainerName
 
 登入Cloud Repository
 podman login irepocld.cminl.oa --tls-verify=false
