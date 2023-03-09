@@ -98,7 +98,7 @@ podman build -f Dockerfile.dmz -t todolistuiimg-dev:v1.00 . --no-cache
 (remove c:/Users/<your account>/.docker/config.json)
 
 啟動容器:
-podman run -d -p 1443:1443 --name my-nginx nginx
+podman run -d -p 1443:1443 --name my-nginx todolistuiimg-dev:v1.00
 -d : 背景執行
 –name : 自訂易容器名稱
 -p : 定義輸出的 port ( <host port>:<expose port>)
