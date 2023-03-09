@@ -20,6 +20,8 @@ podman 可用來：
 
 安裝路徑
 https://github.com/containers/podman/releases
+> podman-4.4.2-setup.exe
+> a file referred to as a Containerfile can be a file named either ‘Containerfile’ or ‘Dockerfile’
 
 ```
 
@@ -108,7 +110,7 @@ podman rm ContainerID
 
 執行 container 內的指令:
 podman exec -it rocky1 sh
-那加上 -it 之後，你就會在 container 內停留操作 bash
+那加上 -it 之後，你就會在 container 內停留操作 sh/bash
 
 監看容器Log
 podman logs ContainerName
