@@ -19,9 +19,11 @@ podman 可用來：
 
 
 安裝路徑
-https://github.com/containers/podman/releases
+podman(https://github.com/containers/podman/releases)
 > podman-4.4.2-setup.exe
 > a file referred to as a Containerfile can be a file named either ‘Containerfile’ or ‘Dockerfile’
+
+podman desktop(https://podman-desktop.io/downloads/Windows)
 
 ```
 
@@ -120,4 +122,6 @@ podman login irepocld.cminl.oa --tls-verify=false
 (--tls-verify=false for fix X509 issue)
 podman tag todolistapi-dev:1.06 irepocld.cminl.oa/todolistapi-dev/todolistapi-dev:1.06
 podman push irepocld.cminl.oa/todolistapi-dev/todolistapi-dev:1.06 --tls-verify=false
+
+Podman跟VS/VS Code IDE整合 ?
 ```
